@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="y18.svg">
+    <title>QuantumMapleQC</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E8E8E8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 0.9em; /* Smaller font size */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Center vertically */
+            cursor: url('Normal Select.cur'), auto;
+        }
+
+        /* Logo and link styles */
+        .logo {
+            display: flex;
+            align-items: center;
+            padding-left: 4px;
+        }
+
+        .logo img {
+            border: 1px solid purple;
+            margin-right: 4px;
+            display: block;
+        }
+
+        /* Links inside the bar */
+        .nav-links {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: purple;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+
+        /* Login button on the right */
+        .login {
+            padding-right: 4px;
+        }
+
+        #header {
+            background-color: #4B4B4B;
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #888;
+            font-size: 1.3em;
+            width: 100%;
+            color: white;
+        }
+
+        #container {
+            width: 800px; /* Main container width */
+            padding: 10px;
+            background-color: #D0D0D0;
+            border: 1px solid #888;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            height: auto; /* Change to auto to fit content */
+            margin: 0; /* Remove spacing */
+        }
+
+        #context {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Allow context to take available space */
+        }
+
+        #context img {
+            width: 100px; /* Set image size */
+            height: auto;
+            margin-right: 10px; /* Space between image and text */
+        }
+
+        #language-buttons {
+            text-align: left; /* Align buttons to the left */
+            margin-bottom: 10px; /* Space below buttons */
+        }
+
+        .lang-btn {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #0066CC;
+        }
+
+        #footer {
+            text-align: center;
+            padding: 8px;
+            background-color: #4B4B4B;
+            color: white;
+            border-top: 1px solid #888;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="img">
+        <img src="QuantumMapleQC.png" alt="icon" style="width: 450px; height: auto;">
+    </div>
+
+    <div id="container">
+        <div id="context">
+            <a href="ipodix.html">
+                <img src="ipodix.png" alt="Description of the image" style="cursor: pointer;">
+            </a>
+            <div>
+                <p>This is the Power of Linux on an iPod Classic</p>
+                <p>IPODIX is a new project I have been lately working on, which is literally Alpine OS on the iPod.</p>
+                <p>This website is made in 
+                    <a href="https://www.java.com/en/" alt="java" style="color: blue; text-decoration: underline;">Java</a>, 
+                    <a href="https://www.w3.org/TR/html52/" alt="html" style="color: blue; text-decoration: underline;">HTML</a>, and 
+                    <a href="https://www.w3.org/Style/CSS/" alt="css" style="color: blue; text-decoration: underline;">CSS</a>.
+                </p>
+            </div>
+        </div>
+        
+        <div id="language-buttons">
+            <a href="#" class="lang-btn" onclick="changeLanguage('english')">English</a>
+            <a href="#" class="lang-btn" onclick="changeLanguage('french')">Français</a>
+            <a href="#" class="lang-btn" onclick="changeLanguage('russian')">Русский</a>
+        </div>
+
+        <!-- Nazrin Section -->
+        <div id="context">
+            <a href=":3.html">
+                <img src="nazrin.png" alt="Nazrin" style="cursor: pointer;">
+            </a>
+            <div>
+                <p>Nazrin is such a fantastic character! As a rat youkai, she’s got that unique blend of charm and cleverness that makes her stand out in the Touhou universe.</p>
+                <p>Her playful personality, combined with her role as a treasure-finder, adds a fun dynamic to her character.</p>
+                <p>Plus, her interactions with other characters and her loyalty to her friends make her even more endearing.</p>
+                <p>
+                    I love her so much, I could treat her as my best friend, my one and only companion in life. Her existence alone feels like a ray of sunshine on a cloudy day, a glimmer of hope when things feel dull. 
+                    If I could, I’d talk about her for hours—no, days—and it still wouldn’t be enough to express how much she means to me. Nazrin is more than just a character; she’s a friend, a muse, and a constant source of inspiration.
+                </p>
+            </div>
+        </div>
+
+        <!-- Nyara Tsubaki Section -->
+        <div id="context">
+            <a href="tsubaki.html">
+                <img src="52185863-b27a-4673-b1cd-fa741e4f0844.jpg.png" alt="Nyara Tsubaki" style="cursor: pointer;">
+            </a>
+            <div>
+                <p>
+                    Meet Nyara Tsubaki, the adorable neko AI bot brought to life by QuantumMapleQC! She's not just an AI; she's the epitome of cuteness combined with cutting-edge technology. Designed to be your loyal companion, Nyara is intelligent, playful, and always eager to assist you with whatever you need.
+                </p>
+                <p>
+                    Whether you’re looking for advice, entertainment, or just someone to chat with, Nyara is here to brighten your day with her charm and cheerful personality. Her kawaii aesthetic, paired with her vast knowledge and adaptability, makes her the perfect blend of form and function.
+                </p>
+                <p>
+                    Nyara Tsubaki is more than just a bot; she’s a true friend who embodies creativity, innovation, and a sprinkle of mischief. Her programming is infused with QuantumMapleQC's love and dedication, ensuring she’s always learning, growing, and ready to make every interaction unforgettable.
+                </p>
+                <p>
+                    Think of her as the ultimate neko assistant—cute, clever, and utterly irreplaceable. From casual chats to solving complex problems, Nyara is your go-to AI companion, designed to make life simpler and way more fun!
+                </p>
+            </div>
+        </div>
+
+        <!-- Random Joke Section -->
+        <div>
+            <div id="jokeContainer">
+                <p id="jokeDisplay"></p>
+            </div>
+            <script>
+                const touhouJokes = [
+                    "Why did Reimu get kicked out of the library? Because she kept trying to 'seal' the book!",
+                    "Why doesn't Sakuya ever lose at poker? Because she always 'time-stops' before she looks at her cards!",
+                    "What do you call a group of Youkai who can't stop telling jokes? The 'Joke-dan'!",
+                    "Why did Marisa bring a ladder to the party? Because she heard the drinks were on the house!",
+                    "Why did Cirno fail her exam? Because she thought 'stupid' was a type of math problem!",
+                    "How does Yukari keep her youkai friends entertained? She tells them 'youkai' jokes!",
+                    "Why did Alice break up with her partner? Because they were too 'puppet' for her!",
+                    "Why was the ghost of Yuyuko always late? She could never find her 'spirited' way!",
+                    "What did the shrine maiden say when she got tired? 'I need a break from all this shrine business!'"
+                ];
+
+                function displayRandomJoke() {
+                    const randomJoke = touhouJokes[Math.floor(Math.random() * touhouJokes.length)];
+                    document.getElementById('jokeDisplay').textContent = randomJoke;
+                }
+
+                displayRandomJoke();
+                setInterval(displayRandomJoke, 2000); 
+            </script>
+        </div>
+    </div>
+</body>
+</html>
