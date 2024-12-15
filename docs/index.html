@@ -4,61 +4,15 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>QuantumMapleQC</title>
-    <link rel="stylesheet" href="quantummapleqc_files/sitestyle.css">
-    <style>
-        body {
-            font-family: "Courier New", Courier, monospace;
-            background-color: #3eac9dc5;
-            color: #000;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .marquee-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-        marquee {
-            display: block;
-            color: #000;
-            padding: 10px 0;
-            font-weight: bold;
-            font-size: 1.2em;
-            width: 80%;
-        }
-        nav {
-            text-align: center;
-            margin: 15px 0;
-        }
-        nav a {
-            color: #000;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
-        img {
-            width: 600px;
-            height: auto;
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="stylefiles.css">
 </head>
 <body>
-    <img src="QuantumMapleQC.png">
+    <header>
+        <!-- Weather Section -->
+        <div class="weather" id="weather">Loading weather...</div>
+    </header>
+
+    <img src="QuantumMapleQC.png" alt="QuantumMapleQC Logo">
 
     <!-- Marquee in the center -->
     <div class="marquee-container">
@@ -67,12 +21,40 @@
 
     <nav>
         <a href="files.html">Files</a>
-        <a href="https://www.youtube.com/@quantumapleqc/">YouTube</a>
+        <a href="https://youtube.com/@QuantumMapleQC/">YouTube</a>
     </nav>
 
     <div class="content">
-        <p>i made this website for 6 months already</p>
-        <p>i just host shit on it </p>
+        <p id="intro"></p>
+        <p>If you look closely the month will change automatically!</p>
     </div>
+
+    <script>
+        async function getWeather() {
+            try {
+                // Fetch weather data from wttr.in in plain text format
+                const response = await fetch('https://wttr.in/?format=%C+%t');
+                const weatherText = await response.text();
+
+                // Display the weather in the weather div
+                document.getElementById('weather').textContent = `Current Weather: ${weatherText}`;
+            } catch (error) {
+                console.error('Error fetching weather:', error);
+                document.getElementById('weather').textContent = 'Unable to load weather.';
+            }
+        }
+
+        function updateIntro() {
+            const startMonth = new Date('2023-06-01'); // Example start date
+            const currentDate = new Date();
+            const monthsElapsed = (currentDate.getFullYear() - startMonth.getFullYear()) * 12 + (currentDate.getMonth() - startMonth.getMonth());
+
+            document.getElementById('intro').textContent = `I got bored, so I made this website that's been hosted on GitHub for ${monthsElapsed} months.`;
+        }
+
+        // Call functions to load data
+        getWeather();
+        updateIntro();
+    </script>
 </body>
 </html>
