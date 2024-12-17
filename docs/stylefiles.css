@@ -1,47 +1,85 @@
+@font-face {
+    font-family: 'Mario64';
+    src: url('fonts/Mario64.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #3eac9dc5;
-    color: #000;
-    margin: 0;
+    font-family: 'Mario64', cursive; 
+    background-color: #398874;
+    color: #ffffff; 
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
     text-align: center;
+    overflow: hidden;
 }
+
+header {
+
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+header h2 {
+    font-family: 'Mario64', cursive;
+    font-size: 2em;
+    color: #000;
+    margin: 0;
+}
+
 .marquee-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px; 
 }
-marquee {
+.marquee {
     display: block;
     color: #000;
-    padding: 10px 0;
     font-weight: bold;
     font-size: 1.2em;
     width: 80%;
+    animation: scrollText 10s linear infinite;
 }
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 nav {
     text-align: center;
     margin: 15px 0;
 }
+
 nav a {
-    color: #000;
+    color: #ffffff; 
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 .content {
     text-align: center;
     padding: 20px;
+    margin-top: 20px; 
 }
+
 img {
     width: 600px;
     height: auto;
