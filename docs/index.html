@@ -3,60 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>QuantumMapleQC</title>
-    <!-- Link to Google Font (Press Start 2P) -->
-    <link rel="stylesheet" href="stylefiles.css">
+    <title>Quebec</title>
+    <link rel="stylesheet" href="stylefiles.css"> 
 </head>
 <body>
-        <!-- Weather Section -->
-        <div class="weather" id="weather">Current Weather: Overcast +8°C</div>    </header>
 
-    <img src="QuantumMapleQC.png" alt="QuantumMapleQC Logo">
-
-    <!-- Marquee in the center -->
-    <div class="marquee-container">
-        <div class="marquee">I BOUGHT SO MANY MONSTER ENERGY DRINKS IM OUT OF MONEY!!1!!11!!!1! please donate! https://ko-fi.com/quantummapleqc </div>
-    </div>
-
-    <nav>
-        <a href="https://quantummapleqc.is-a.dev/files.html">Files</a>
-        <a href="https://www.youtube.com/@quantumapleqc">YouTube</a>
-    </nav>
-
-    <div class="content">
-        <p id="intro">I got bored, so I made this website that's been hosted on GitHub for 19 months.</p>
-        <p>If you look closely the month will change automatically!</p>
-    </div>
-
-    <div> 
-            <img src ="gifcities/fullmetalalchemist_trailor_homesite.gif">
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="quantummapleqc.png" alt="Logo" class="img-small">
         </div>
-  
-        
+        <nav>
+            <a href="https://cursedscrubdaddygang.is-a.dev">CursedScrubDaddyGang</a>
+            <a href="files.html">files</a>
+            <a href="https://github.com/quantummapleqc">Projects</a>
+            <a href="javascript:void(0);" class="chatbox-toggle" onclick="toggleChatbox()">Open Chat</a>
+        </nav>
+    </div>
+
+    <div class="weather">Current Weather: 22°C, Sunny</div>
+
+    <div class="main-content">
+        <h1>Welcome to the QuantumMapleQC Webs</h1>
+        <p>
+            This is where i publically show my Projects on this Website or on <a href="https.com/github.com">Github</a> !
+        </p>
+        <p>
+               Back in 2022 i started as a beguinner using Linux in which i was using <a href="https://ubuntu.com">Ubuntu</a> on my shitty Macbook 2012, with time i got used by also discovering KDE plasma i decided to go trough a lot and still to this day i say that Linux is the fucking best! Fuck you bill gates!
+            
+        </p>
+        <p>
+Current Project with friends: Antma Window Manager <a href="https://github.com/antma-window-manager">Project</a>!
+        </p>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee">This Website is not Fully done.. Please be patient</div>
+    </div>
+    <a href="https://kofi.com/quantummapleqc" class="donation-link">Donate Here</a>
+    
+    <iframe class="chatbox-embed" src="https://my.cbox.ws/kewlchats"></iframe>
+
     <script>
-        async function getWeather() {
-            try {
-                const response = await fetch('https://wttr.in/?format=%C+%t');
-                const weatherText = await response.text();
-                document.getElementById('weather').textContent = `Current Weather: ${weatherText}`;
-            } catch (error) {
-                console.error('Error fetching weather:', error);
-                document.getElementById('weather').textContent = 'Unable to load weather.';
-            }
+        function toggleChatbox() {
+            var chatbox = document.querySelector('.chatbox-embed');
+            var button = document.querySelector('.chatbox-toggle');
+            
+            if (chatbox.style.display === "none" || chatbox.style.display === "") {
+                chatbox.style.display = "block";
+                button.textContent = "Close Chat"; 
+            } else {
+                chatbox.style.display = "none";
+                button.textContent = "Open Chat"; 
         }
-
-        function updateIntro() {
-            const startMonth = new Date('2023-06-01');
-            const currentDate = new Date();
-            const monthsElapsed = (currentDate.getFullYear() - startMonth.getFullYear()) * 12 + (currentDate.getMonth() - startMonth.getMonth());
-            document.getElementById('intro').textContent = `I got bored, so I made this website that's been hosted on GitHub for ${monthsElapsed} months.`;
-        }
-
-        // Call functions to load data
-        getWeather();
-        updateIntro();
     </script>
+
 </body>
 </html>
-
