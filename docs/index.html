@@ -1,89 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quebec</title>
-    <link rel="stylesheet" href="stylefiles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapeel</title>
+  <link rel="stylesheet" href="stylefiles.css">
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="logo-container">
-            <img src="quantummapleqc.png" alt="Logo" class="img-small">
-        </div>
-        <nav>
-            <a href="https://github.com/quantummapleqc">Projects</a>
-            <a href="javascript:void(0);" class="chatbox-toggle" onclick="toggleChatbox()">Open Chat</a>
-        </nav>
+  <div class="top-bar">
+    <div class="logo-container" id="logoContainer">
+      <h2 id="logoText">mapeel</h2>
     </div>
+    <nav>
+      <a href="https://github.com/quantummapleqc">Projects</a>
+    </nav>
+  </div>
 
-
-    <div class="main-content">
-        <img src="gifcities/working.gif"> <h2>Quantummapleqc</h2>
-        <div>
-        </div>
-        <img src="gifcities/advertisement1.gif">
-        <div>
-
-        </div>
-        <p>
-            This is where i publically show my Projects on this Website or on <a href="https.com/github.com">Github</a> !
-        </p>
-        <p>
-               Back in 2022 i started as a beguinner using Linux in which i was using <a href="https://ubuntu.com">Ubuntu</a> on my shitty Macbook 2012, with time i got used by also discovering KDE plasma i decided to go trough a lot and still to this day i say that Linux is the fucking best! Fuck you bill gates!
-            
-        </p>
-        <p>
-Current Project with friends: Antma Window Manager <a href="https://github.com/antma-window-manager">Project</a>!
-        </p>
+  <!-- Whiteboard with text on the left and gif on the right -->
+  <div class="whiteboard">
+    <div class="whiteboard-left">
+      <h2>Who is Mapel?</h2>
+      <p>Trans girl (she/they)🏳️‍⚧️ dont care if you misgender me! :3</p>
+      <p>i code most of my time in HTML & CSS</p>
+      <p>Content creator <a href="https://www.youtube.com/@quantumapleqc">Channel</a></p>
     </div>
-
-    <div class="marquee-container">
-        <div class="marquee"> (THIS WEBSITE IS NOT MADE FOR BEING USED ON PHONE!)</div>
+    <div class="whiteboard-right">
+      <img src="gifcities/canada.gif" alt="Mapel's gif">
     </div>
-    <a href="https://ko-fi.com/quantummapleqc" class="donation-link">Donate Here</a>
+  </div>
+
+  <div class="box">
+    <h3>gaming stuff</h3>
+    <p>Minecraft Server's: OFFLINE 🔴</p>
+  </div>
+
+  <script>
+    const texts = ["Mapeel", "TF2 Player", "Programmer", "Server Builder"];
+    let index = 0;
+    const logoText = document.getElementById("logoText");
     
-    <iframe class="chatbox-embed" src="https://my.cbox.ws/kewlchats"></iframe>
-<div>
-</div>
-<img src="gifcities/fullmetalalchemist_trailor_homesite.gif">
-<div>
-</div>
-<img src="gifcities/link_pepsi.gif">
-<div>
-<img src="gifcities/javaguy.gif" class="img-small2">
-<a href="https://java.com">Java Script</a>
-<div>
-</div>
-<img src="gifcities/geocities.gif" class="img-small2">
-<a href="https://html.com">HTML Script</a>
-<div>
-</div>
-<img src="gifcities/earth.gif" class="img-small2">
-<a href="https://www.w3.org/Style/CSS/Overview.en.html">Css Script</a>
-<div>
-</div>
-<img src="scrub/zfdgzfdg.png" class="img-small2">
-<a href="https://cursedscrubdaddygang.is-a.dev/">CursedScrubDaddyGang</a>
-<div>
-</div>
-<div>
-</div>
-<img src="gifcities/EvilExplorer.gif"> <img src="gifcities/Animated_Microsoft_Internet_Explorer51C1.gif">
-<script>
-    function toggleChatbox() {
-        var chatbox = document.querySelector('.chatbox-embed');
-        var button = document.querySelector('.chatbox-toggle');
-        
-        if (chatbox.style.display === "none" || chatbox.style.display === "") {
-            chatbox.style.display = "block";
-            button.textContent = "Close Chat"; 
-        } else {
-            chatbox.style.display = "none";
-            button.textContent = "Open Chat"; 
-        }
-    }
-</script>
+    setInterval(() => {
+      logoText.style.opacity = 0;
+      setTimeout(() => {
+        index = (index + 1) % texts.length;
+        logoText.textContent = texts[index];
+        logoText.style.opacity = 1;
+      }, 500);
+    }, 3000);
+  </script>
+
 </body>
 </html>
