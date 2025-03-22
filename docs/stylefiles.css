@@ -73,41 +73,43 @@ body {
 .box a:hover {
     text-decoration: underline;
 }
-
-/* Whiteboard styling: two columns with text on the left and gif on the right */
-.whiteboard {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    max-width: 600px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.whiteboard-left {
-    flex: 1;
-    text-align: left;
-    padding-right: 10px;
-}
-
-.whiteboard-right {
-    flex: 0 0 150px;
-    text-align: right;
-    padding-left: 10px;
-}
-
 .whiteboard-right img {
-    width: 100%;
-    border-radius: 10px;
-}
+    max-width: 100%;   /* Ensure the image doesn't exceed the container width */
+    height: auto;      /* Maintain aspect ratio */
+    max-height: 400px; /* You can adjust this height as needed */
+  }
+  
 
+    /* Styling the Gallery section */
+    .whiteboard h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      /* Adding a line after the gallery title */
+      .whiteboard h2::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: #000;
+        margin: 10px auto;
+      }
+  
+      /* Styling the image gallery */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+  
+      .gallery img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 @keyframes marquee {
     0% {
         transform: translateX(100%);
