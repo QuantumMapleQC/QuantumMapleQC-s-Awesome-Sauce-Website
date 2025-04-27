@@ -6,11 +6,13 @@
 
 body {
   font-family: "Trebuchet MS", sans-serif;
-  background: url('images/pxfuel.jpg');
-  background-color: #1b1b1b;
+  background: url('photo-1736109046592-41b51d919758.avif') no-repeat center center fixed;
+  background-size: cover;
   color: #ffffff;
   padding-top: 70px;
+  min-height: 100vh; /* <-- THIS forces body to always fill full height */
 }
+
 
 /* NAVBAR 2008 STYLE */
 .navbar-2008 {
@@ -86,10 +88,5 @@ body {
   max-width: 900px;
   margin: 60px auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(15px);
-  border-radius: 25px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
