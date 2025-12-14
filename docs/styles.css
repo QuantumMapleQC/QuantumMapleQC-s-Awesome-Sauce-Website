@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+/* GLOBAL STYLES */
+body {
+    background-image: url(background/recreated-the-windows-95-setup-wallpaper-in-4k-v0-mi1mk7ta2t0f1.webp);
+    color: white;
+    padding-top: 68px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+/* ===== TOP NAV (FIXED, CENTERED, AND FLOATING) - REVISED ===== */
+.topnav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 90%;
+    max-width: 1000px;
+
+    height: 48px;
+    z-index: 9999;
+
+    background-color: rgba(139, 48, 48, 0.95); 
+    
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.nav-logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 14px;
+    transition: transform 0.6s ease;
+}
+
+.nav-logo:hover {
+    transform: rotate(360deg);
+}
+
+/* Nav links */
+.topnav a {
+    color: #f2f2f2;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 4px; /* Added back */
+}
+
+.topnav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* ===== HEADINGS & HR ===== */
+h2 {
+    color: crimson;
+}
+
+hr {
+    border-color: #444;
+    margin: 40px 0;
+}
+
+/* ===== GENDER & FLAG STYLES ===== */
+.gender {
+    color: deeppink
+}
+
+/* Container for Flags (New: centering and spacing) */
+.gender-images {
+    display: flex;
+    justify-content: center; /* Centers flags */
+    align-items: center;
+    gap: 20px; /* Space between flags */
+    margin: 20px 0; /* Vertical space */
+}
+
+.gender-flags {
+    width: 145px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0; /* Removed previous margin to be controlled by .gender-images */
+}
+
+.purplething {
+    color: blueviolet
+}
+
+/* ===== SPACING FIXES (Character List) ===== */
+.content p {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    padding: 0;
+}
+
+.content a {
+    display: block;
+    margin-top: 20px; 
+    margin-bottom: 0;
+}
+.hidden-image {
+    display: none;
+    margin-top: 15px; 
+}
+
+button {
+    color: rgb(53, 109, 194);
+    padding: 2px 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
+ .quebec{
+color:blue
+}

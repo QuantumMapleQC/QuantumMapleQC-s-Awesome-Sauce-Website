@@ -2,106 +2,77 @@
 <html>
 <head>
     <title>mapel</title>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>mapel</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
-
-       .topnav {
-    background-color: rgb(156, 65, 65);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 2px 8px; /* ↓ smaller bar height */
-}
-
-.nav-logo {
-    width: 24px; /* smaller logo to fit reduced bar */
-    height: 24px;
-    margin: 4px 10px; /* tighter vertical space */
-    transition: transform 0.6s ease;
-}
-
-.topnav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 2px 6px; /* smaller vertical padding */
-    text-decoration: none;
-    font-size: 16px;
-}
-
-        body {
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
-        }
-
-        a {
-            color: red;
-        }
-
-        .content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            font-size: 18px;
-            line-height: 1.7;
-        }
-
-        h2 {
-            color: crimson;
-        }
-
-        hr {
-            border-color: #444;
-            margin: 40px 0;
-        }
-
-strong {
-  background: linear-gradient(
-    90deg,
-    #ff0000,
-    #ff7f00,
-    #ffff00,
-    #00ff00,
-    #0000ff,
-    #8b00ff,
-    #ff0000
-  );
-  background-size: 800%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbowShift 3s linear infinite;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-}
-
-@keyframes rainbowShift {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 400% 50%; }
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
     <div class="topnav">
-    <img src="imgs/nazrin.png" alt="Logo" class="nav-logo">
-    <a href="index.html">home</a>
-    <a href="proj.html">projects</a>
-    <a href="https://github.com/QuantumMapleQC">Github</a>
-  </div>
+        <img src="imgs/nazrin.png" alt="Logo" class="nav-logo">
+        <a href="index.html">home</a>
+        <a href="proj.html">projects</a>
+        <a href="https://github.com/QuantumMapleQC">Github</a>
+    </div>
     <marquee>This page is under construction</marquee>
 
+    <div class="content">
+        <p>Haii, Hello im <strong>mapel</strong>. This website is for something I don't know what for yet, but this is gonna be a pronouns / Who am I website for now!</p>
 
-<div class="content">
-    <p>haii :3 my name is maple aka <strong>mapel, QuantumMapleQc</strong> i have been into computer programming for have a year now and i am the one who also created a few projects that are now archived unfortunately... like <a href="details-about-anterminal.html">Anterminal</a> and <a href="https://github.com/antma-window-manager">Antma</a></p>
-    <p>anyways yes im a furry lol</div>
+        <div class="gender">
+            <p class="gender-text">
+                Gender: I'm originally born as a boy, so He/Him, but due to a lot of personal reasons including trauma and body dysphoria, I'm actually a trans girl. I go by She/Her.
+                <span class="note-important">
+                    <h2>(Do not worry little one, you will never hurt me with your accidents!) </h2>
+                    If you misgender me, it's completely okay. I do not mind it at all. People can call me a he/him if they want to. I will accept it!
+                </span>
+            </p>
+                <div class="purplething">
+                <p>
+                Fictional Characters: for context the Fictosexual is a kind of kinky way of saying im obsessed with multiple characters in a way of saying "i would date this character!"
+            </div> 
+            <div class="gender-images">
+                <img src="flags/Trans.png" class="gender-flags" alt="Transgender Pride Flag">
+                <img src="flags/Fictosexual_pride_flag.webp" class="gender-flags" alt="Fictosexuality Pride Flag">
+            </div>
+        </div>
+<hr> 
+        
+        <div id="quebec-section">
+
+            <button onclick="toggleImage('quebecFlagImage')">Show/Hide</button>
+            
+            <div id="quebecFlagImage" class="hidden-image">
+                <img src="imgs/quebec1.webp" alt="Quebec Flag"> 
+        </div>
+
+             
+            <p class="character-header">Other characters I love from different Games/Fandoms:</p>
+            
+            <a href="https://en.wikipedia.org/wiki/Hatsune_Miku">Hatsune Miku</a>
+            <p class="character-quote">"Miku is my Anti-Depressant"</p>
+
+            <a href="https://en.touhouwiki.net/wiki/Nazrin" class="character-name">Nazrin</a>
+            <p class="character-quote">"I love rats"</p>
+
+            <a href="https://postal.fandom.com/wiki/The_Postal_Dude" class="character-name">Postal Dude</a>
+            <p class="character-quote">"Postal dude is actually me fr fr"</p>
+
+            <a href="https://en.wikipedia.org/wiki/Doomguy" class="character-name">Doomguy</a>
+            <p class="character-quote">"Big buff dude with guns killing satan's children!"</p>
+        </div>
+    </div>
+    <script>
+    function toggleImage(imageId) {
+        var imageDiv = document.getElementById(imageId);
+
+        // Check the current display style
+        if (imageDiv.style.display === "none" || imageDiv.style.display === "") {
+            // If hidden, show it
+            imageDiv.style.display = "block";
+        } else {
+            // Otherwise, hide it
+            imageDiv.style.display = "none";
+        }
+    }
+</script> 
 </body>
 </html>
