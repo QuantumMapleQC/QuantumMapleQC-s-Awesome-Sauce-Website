@@ -131,3 +131,28 @@ button {
  .quebec{
 color:blue
 }
+/* Must be set to none initially */
+#main-content {
+    display: none; 
+}
+
+#video-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;   /* Viewport Width */
+    height: 100vh;  /* Viewport Height */
+    z-index: 10000;
+    background-color: black; /* Safety background for the edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; 
+    transition: opacity 0.5s ease-out;
+}
+
+#introVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* THIS IS KEY: It forces the video to fill the space, cropping if necessary. */
+}
