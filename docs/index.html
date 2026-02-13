@@ -1,167 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>mapel</title>
+    <meta charset="UTF-8">
+    <title>maple@arch:~</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div id="video-preloader">
-    <div id="click-to-start-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10001; background-color: rgba(0, 0, 0, 0.7); display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer;">
+<div class="desktop-icons">
+    <div class="icon" onclick="window.open('https://cursedscrub.mapel.is-a.dev', '_blank')">
+        <img src="https://win98icons.alexmeub.com/icons/png/world-4.png" width="32"><br>CursedScrub
     </div>
-
-    <video id="introVideo" width="100%" height="100%" autoplay muted playsinline> 
-        <source src="video/TV intro.mp4" type="video/mp4" alt="Website Intro Animation">
-        Your browser does not support the video tag.
-    </video>
+    <div class="icon" onclick="window.open('https://tsubaki.expect.ovh', '_blank')">
+        <img src="https://win98icons.alexmeub.com/icons/png/template_empty-3.png" width="32"><br>Tsubaki
+    </div>
+    <div class="icon">
+        <img src="https://win98icons.alexmeub.com/icons/png/network_normal_two_pcs-0.png" width="32"><br>Network
+    </div>
 </div>
-    <div id="main-content">
-        
-        <div class="topnav">
-            <img src="imgs/nazrin.png" alt="Logo" class="nav-logo">
-            <a href="index.html">home</a>
-            <a href="proj.html">projects</a>
-            <a href="https://github.com/QuantumMapleQC">Github</a>
+
+<div class="window-container">
+    
+    <div class="window identity-win">
+        <div class="title-bar">
+            <div class="title-bar-text">C:/whoami.txt - Notepad</div>
         </div>
-        <div class="content">
-            <p>Haii, Hello im <strong>mapel</strong>. This website is for something I don't know what for yet, but this is gonna be a pronouns / Who am I website for now!</p>
-
-            <div class="gender">
-                <p class="gender-text">
-                    Gender: I'm originally born as a boy, so He/Him, but due to a lot of personal reasons including trauma and body dysphoria, I'm actually a trans girl. I go by She/Her.
-                    <span class="note-important">
-                        <h2>(Do not worry little one, you will never hurt me with your accidents!)</h2>
-                        If you misgender me, it's completely okay. I do not mind it at all. People can call me a he/him if they want to. I will accept it!
-                    </span>
-                </p>
-
-                <div class="purplething">
-                    <p>Fictional Characters: for context the Fictosexual is a kind of kinky way of saying I'm obsessed with multiple characters in a way of saying "I would date this character!"</p>
-                </div> 
-
-                <div class="gender-images">
-                    <img src="flags/Trans.png" class="gender-flags" alt="Transgender Pride Flag">
-                    <img src="flags/Fictosexual_pride_flag.webp" class="gender-flags" alt="Fictosexuality Pride Flag">
-                </div>
+        <div class="window-body">
+            <div class="bio-scroll">
+                "Haii! I'm maple. A trans girl obsessed with tech and fictional characters. I do Cybersecurity things and im a content creator."
             </div>
-
-            <hr> 
-            
-            <div id="quebec-section">
-                <h1>BY THE WAY!</h1>
-
-                <button onclick="toggleImage('quebecFlagImage')">Show/Hide Quebec Flag</button>
-                
-                <div id="quebecFlagImage" class="hidden-image">
-                    <img src="imgs/quebec1.webp" alt="Quebec Flag"> 
-                </div>
-
-                <p>I'm from Quebec, which I speak the language itself called "Quebequoi"!</p>
-                <p>Fun Fact: Did you know that the Chinese Pie (**Pâté chinois**) was originally created in Quebec?</p>
-            </div>
-            
-            <hr> 
-
-            <div class="section-characters">
-                <p class="character-header">Other characters I love from different Games/Fandoms:</p>
-                
-                <a href="https://en.wikipedia.org/wiki/Hatsune_Miku" class="character-name">Hatsune Miku</a>
-                <p class="character-quote">"Miku is my Anti-Depressant"</p>
-
-                <a href="https://en.touhouwiki.net/wiki/Nazrin" class="character-name">Nazrin</a>
-                <p class="character-quote">"I love rats"</p>
-
-                <a href="https://postal.fandom.com/wiki/The_Postal_Dude" class="character-name">Postal Dude</a>
-                <p class="character-quote">"Postal dude is actually me fr fr"</p>
-
-                <a href="https://en.wikipedia.org/wiki/Doomguy" class="character-name">Doomguy</a>
-                <p class="character-quote">"Big buff dude with guns killing satan's children!"</p>
+            <div class="flag-container">
+                <div class="flag trans" title="Trans Pride"></div>
+                <div class="flag quebec" title="Quebec"></div>
             </div>
         </div>
     </div>
+
+    <div class="window projects-win">
+        <div class="title-bar">
+            <div class="title-bar-text">C:\Users\maple\Documents\Projects</div>
+        </div>
+        <div class="window-body projects-body">
+            <div class="project-entry">
+                <strong>Anterminal</strong> - Basic Terminal Emulator for Linux<br>
+                <a href="https://github.com/antma-window-manager/anterminal" target="_blank">GitHub</a>
+            </div>
+            <div class="project-entry">
+                <strong>Nyara Tsubaki</strong> - Discord bot with a weird personality<br>
+                <a href="https://github.com/QuantumMapleQC/Tsubaki-Project" target="_blank">GitHub</a>
+            </div>
+            <div class="project-entry">
+                <strong>nyara</strong> - Side project for AI responses<br>
+                <a href="https://github.com/QuantumMapleQC/nyara" target="_blank">GitHub</a>
+            </div>
+            <div class="project-entry">
+                <strong>Digital-Clock-HTML</strong> - Clock with Weather/Location<br>
+                <a href="https://github.com/QuantumMapleQC/Digital-Clock-HTML" target="_blank">GitHub</a>
+            </div>
+            <div class="project-entry">
+                <strong>Lazy Arch Updater</strong> - Bash automation script<br>
+                <a href="https://github.com/QuantumMapleQC/Lazy-Arch-Updater" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="window terminal-win">
+        <div class="title-bar terminal-bar">
+            <div class="title-bar-text">Terminal - fastfetch</div>
+        </div>
+        <div class="window-body terminal-body">
+            <div class="bash-section"><span class="prompt">[maple@maple ~]$</span> fastfetch</div>
+            <div class="fastfetch-container">
+                <pre class="arch-logo">
+       .o+` 
+      `ooo/ 
+     `+oooo: 
+    `+oooooo: 
+    -+oooooo+: 
+  `/:-:++oooo+: 
+ `/++++/+++++++: 
+`/++++++++++++++: 
+`/+++ooooooooooooo/` 
+./ooosssso++osssssso+` 
+.oossssso-````/ossssss+` 
+-osssssso.      :ssssssso. 
+:osssssss/        osssso+++. 
+/ossssssss/        +ssssooo/- 
+`/ossssso+/:-        -:/+osssso+- 
+ `+sso+:-`                `.-/+oso: 
+  `++:.                           `-/+/ 
+    .`                                 `/
+                </pre>
+                <div class="fetch-info">
+                    <span class="fetch-user">maple</span>@<span class="fetch-user">maple</span><br>
+                    -----------<br>
+                    <span class="label">OS:</span> Arch Linux x86_64<br>
+                    <span class="label">Kernel:</span> 6.18.9-arch1-2<br>
+                    <span class="label">DE:</span> KDE Plasma 6.5.5<br>
+                    <span class="label">CPU:</span> Ryzen 3 4100 (8)<br>
+                    <span class="label">GPU:</span> Radeon RX 570<br>
+                    <span class="label">Mem:</span> 7.94 / 15.41 GiB
+                </div>
+            </div>
+            <div class="bash-section" style="margin-top:10px">
+                <span class="prompt">[maple@maple ~]$</span> ls ./interests<br>
+                <span class="output">Coding&nbsp;&nbsp;Anime&nbsp;&nbsp;Cybersecurity</span>
+            </div>
+            <span class="blink">_</span>
+        </div>
+    </div>
+
+    <div class="window syndicate-win">
+        <div class="title-bar syndicate-bar">
+            <div class="title-bar-text">Secure Connection - 0x1fc Syndicate</div>
+        </div>
+        <div class="window-body syndicate-body">
+            <div class="syndicate-header">
+                <img src="imgs/onion" width="16">
+                <span><a href="[https://www.torproject.org/download/](https://www.torproject.org/download/)" target="_blank">Use Tor Browser</a></span>
+            </div>
+            <div class="onion-terminal">
+                <span class="term-label">[BOUNTY_SITE]</span>
+                <code class="onion-link">[http://yix53akafjl2uvxuehz5ukno5r4hcmhrv5nr73iez7f2o3tgahhzdgqd.onion/](http://yix53akafjl2uvxuehz5ukno5r4hcmhrv5nr73iez7f2o3tgahhzdgqd.onion/)</code>
+                <p class="term-status">> Not in operation yet</p>
+                
+                <span class="term-label">[CENTRAL_FORUM]</span>
+                <code class="onion-link">[http://ocbxpprihgijyujtjqiq2ap2ehrf5m7kxuib2ckyrm5dfddycs4pkiad.onion/](http://ocbxpprihgijyujtjqiq2ap2ehrf5m7kxuib2ckyrm5dfddycs4pkiad.onion/)</code>
+                <p class="term-status">> Under development</p>
+
+                <span class="term-label">[INFO_SITE]</span>
+                <code class="onion-link">[http://6kewu3ozahphevmz4kghkrslgwyvjnrnybgmuah5sgkmpz5bm24nxryd.onion/](http://6kewu3ozahphevmz4kghkrslgwyvjnrnybgmuah5sgkmpz5bm24nxryd.onion/)</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="window mc-win">
+        <div class="title-bar mc-bar">
+            <div class="title-bar-text">Minecraft Server</div>
+        </div>
+        <div class="window-body mc-body">
+            <div class="mc-header">
+                <img src="imgs/minecraft.svg" width="16">
+                <span>mapleland.minecraft.party</span>
+            </div>
+            <div class="console-box">
+                <p class="log">[INFO] Server Running on Ubuntu 22.04</p>
+                <p class="log">[INFO] 24/7 Online</p>
+                <p class="log">[INFO] Default game type: Survival</p>
+                <p class="log">[INFO] Read the rules!</p>
+                <p class="log success">[INFO] Reach me on Discord for help</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="window sites-win">
+        <div class="title-bar">
+            <div class="title-bar-text">C:\Websites\domains</div>
+        </div>
+        <div class="window-body sites-body">
+            <div class="dir-item" onclick="window.open('[https://cursedscrub.mapel.is-a.dev](https://cursedscrub.mapel.is-a.dev)', '_blank')">
+                <span>Cursed Scrub Archive</span>
+            </div>
+            <div class="dir-item" onclick="window.open('[https://tsubaki.expect.ovh](https://tsubaki.expect.ovh)', '_blank')">
+                <span>Tsubaki Project</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 <script>
-    function toggleImage(imageId) {
-        var imageDiv = document.getElementById(imageId);
-        if (imageDiv.style.display === "none" || imageDiv.style.display === "") {
-            imageDiv.style.display = "block";
-        } else {
-            imageDiv.style.display = "none";
+    function updateClock() {
+        const now = new Date();
+        const clockEl = document.getElementById('clock');
+        if(clockEl) {
+            clockEl.innerText = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
         }
     }
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const videoElement = document.getElementById('introVideo');
-        const preloader = document.getElementById('video-preloader');
-        const mainContent = document.getElementById('main-content');
-        const clickOverlay = document.getElementById('click-to-start-overlay');
-
-        const showContent = () => {
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            }
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.style.display = 'none';
-                mainContent.style.display = 'block';
-            }, 500);
-        };
-
-        const enterFullscreen = (element) => {
-            if (element.requestFullscreen) {
-                element.requestFullscreen();
-            } else if (element.mozRequestFullScreen) {
-                element.mozRequestFullScreen();
-            } else if (element.webkitRequestFullscreen) {
-                element.webkitRequestFullscreen();
-            } else if (element.msRequestFullscreen) {
-                element.msRequestFullscreen();
-            }
-        };
-        
-        const activateVideo = () => {
-            if (videoElement.muted) {
-                videoElement.muted = false; 
-                videoElement.volume = 1.0; 
-            }
-            videoElement.play(); 
-            enterFullscreen(preloader); 
-            clickOverlay.style.display = 'none'; 
-            
-            clickOverlay.removeEventListener('click', activateVideo);
-        };
-        
-        if (videoElement && preloader && mainContent && clickOverlay) {
-            
-            preloader.style.display = 'flex';
-            preloader.style.opacity = '1';
-            mainContent.style.display = 'none';
-            
-            clickOverlay.addEventListener('click', activateVideo);
-
-            videoElement.load();
-            videoElement.play().catch(error => {
-                console.warn("Autoplay was prevented, waiting for user click.");
-            });
-
-            videoElement.addEventListener('playing', () => {
-                clickOverlay.style.display = 'none';
-            });
-
-
-            videoElement.addEventListener('ended', showContent);
-            videoElement.addEventListener('error', showContent);
-
-            setTimeout(() => {
-                if (preloader.style.display !== 'none' && preloader.style.opacity === '1') {
-                    showContent();
-                }
-            }, 10000); 
-
-        } else {
-            preloader.style.display = 'none';
-            mainContent.style.display = 'block';
-        }
-    });
+    setInterval(updateClock, 1000);
+    updateClock();
 </script>
+
 </body>
 </html>
